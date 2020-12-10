@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/fondo_transparente"
+            android:text="Inicio"
+            android:textSize="23sp"
+            android:textColor="@color/naranja"
+            android:id="@+id/inicio"></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mi perfil"
+            android:textSize="30sp"
+            android:textColor="@color/naranja"
+            android:textStyle="bold"
+            android:layout_below="@+id/inicio"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/Titulo"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nickname: "
+            android:layout_below="@id/Titulo"
+            android:textSize="25sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/nickname"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dummy user"
+            android:layout_below="@id/nickname"
+            android:textSize="25sp"
+            android:textColor="@color/negro"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/nickname_usuario"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="País de residencia: "
+            android:layout_below="@id/nickname_usuario"
+            android:textSize="25sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/pais_de_residecia"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="México"
+            android:layout_below="@id/pais_de_residecia"
+            android:textSize="25sp"
+            android:textColor="@color/negro"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/pais_usuario"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miembro desde: "
+            android:layout_below="@id/pais_usuario"
+            android:textSize="25sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/miembro_desde"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 de Abril de 1969"
+            android:layout_below="@id/miembro_desde"
+            android:textSize="25sp"
+            android:textColor="@color/negro"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/antiguedad_usuario"></TextView>
+        <Button
+            android:layout_width="380dp"
+            android:layout_height="90dp"
+            android:background="@drawable/fondo_boton"
+            android:layout_below="@id/antiguedad_usuario"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Ver mis publicaciones"
+            android:textColor="@color/blanco"
+            android:textSize="25dp"
+            android:id="@+id/btn_ver_publicaciones"></Button>
+        <Button
+            android:layout_width="380dp"
+            android:layout_height="90dp"
+            android:background="@drawable/fondo_boton"
+            android:layout_below="@id/btn_ver_publicaciones"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Editar cuenta"
+            android:textColor="@color/blanco"
+            android:textSize="25dp"
+            android:id="@+id/btn_editar_cuenta"></Button>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

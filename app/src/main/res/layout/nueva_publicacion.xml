@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nueva Publicación"
+            android:textSize="30sp"
+            android:textColor="@color/naranja"
+            android:layout_marginLeft="30dp"
+            android:layout_margin="30dp"
+            android:id="@+id/encabezado"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título: "
+            android:layout_below="@id/encabezado"
+            android:textSize="27sp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:id="@+id/titulo"></TextView>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo"
+            android:layout_centerHorizontal="true"
+            android:hint="titulo de la publicación"
+            android:id="@+id/input1"></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escribe algo:"
+            android:layout_below="@id/input1"
+            android:textSize="27sp"
+            android:textColor="@color/negro"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/escribe_algo"></TextView>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/escribe_algo"
+            android:layout_centerHorizontal="true"
+            android:hint="¿Qué quieres compartir?"
+            android:id="@+id/input2"></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tags:"
+            android:layout_below="@id/input2"
+            android:textSize="27sp"
+            android:textColor="@color/negro"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/selecciona_tags"></TextView>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selecciona_tags"
+            android:layout_centerHorizontal="true"
+            android:hint="Ejemplo: #strong"
+            android:id="@+id/input3"></EditText>
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:background="@drawable/fondo_boton"
+            android:layout_below="@id/input3"
+            android:text="Enviar"
+            android:textSize="25dp"
+            android:textColor="@color/blanco"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_enviar"></Button>
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:background="@drawable/fondo_boton"
+            android:layout_below="@id/input3"
+            android:text="Cancelar"
+            android:textSize="25dp"
+            android:textColor="@color/blanco"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_cancelar"></Button>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

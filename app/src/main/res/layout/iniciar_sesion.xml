@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo electrónico: "
+                    android:textSize="27sp"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"
+                    android:id="@+id/correo_electronico"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:hint="correo@algo.com"
+                    android:id="@+id/input1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contraseña: "
+                    android:textSize="27sp"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"
+                    android:id="@+id/contrasena" />
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:hint="**********"
+                    android:id="@+id/input2" />
+                <Button
+                    android:layout_width="360dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Iniciar Sesión"
+                    android:textColor="@color/blanco"
+                    android:textSize="18sp"
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/btn_enviar" />
+
+                <Button
+                    android:id="@+id/btn_Registrarse"
+                    android:layout_width="360dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Registrarse"
+                    android:textColor="@color/blanco"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
