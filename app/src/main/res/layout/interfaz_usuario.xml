@@ -1,154 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RelativeLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/naranja"
+                android:layout_margin="30dp"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/subtitulo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Quieres compartir algo?"
+                android:textSize="27sp"
+                android:layout_below="@id/subtitulo"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/negro"
+                android:textStyle="bold"
+                android:id="@+id/quieres_compartir" />
+
+            <Button
+                android:layout_width="360sp"
+                android:layout_height="40sp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@id/quieres_compartir"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Crear Publicación"
+                android:textColor="@color/blanco"
+                android:textSize="18sp"
+                android:id="@+id/btn_crear_publicacion" />
+            <ListView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="!Hola usuario dummy!"
-                    android:textColor="@color/naranja"
-                    android:layout_margin="30dp"
-                    android:textSize="30sp"
-                    android:layout_marginLeft="30dp"
-                    android:id="@+id/subtitulo"></TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="¿Quieres compartir algo?"
-                    android:textSize="27sp"
-                    android:layout_below="@id/subtitulo"
-                    android:layout_marginLeft="30dp"
-                    android:textColor="@color/negro"
-                    android:textStyle="bold"
-                    android:id="@+id/quieres_compartir"></TextView>
-                <Button
-                    android:layout_width="360dp"
-                    android:layout_height="90dp"
-                    android:background="@drawable/fondo_boton"
-                    android:layout_below="@id/quieres_compartir"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="Crear Publicación"
-                    android:textColor="@color/blanco"
-                    android:textSize="25dp"
-                    android:id="@+id/btn_crear_publicacion"></Button>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Publicaciones no vistas:"
-                    android:textSize="27sp"
-                    android:layout_below="@id/btn_crear_publicacion"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
-                    android:textColor="@color/negro"
-                    android:textStyle="bold"
-                    android:id="@+id/publicaciones_no_vistas"></TextView>
-                <Button
-                    android:layout_width="350dp"
-                    android:layout_height="210dp"
-                    android:background="@drawable/fondo_publicacion"
-                    android:layout_below="@id/publicaciones_no_vistas"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/btn_publicacion1"></Button>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Título 1"
-                    android:textColor="@color/naranja"
-                    android:layout_below="@id/publicaciones_no_vistas"
-                    android:textSize="25dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="18dp"
-                    android:textStyle="bold"
-                    android:id="@+id/titulo1"></TextView>
-                <TextView
-                    android:layout_width="330dp"
-                    android:layout_height="100dp"
-                    android:text="@string/publicacion"
-                    android:layout_below="@id/titulo1"
-                    android:textSize="20dp"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@color/negro"
-                    android:id="@+id/contenido_publicacion1"></TextView>
-                <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_below="@id/contenido_publicacion1"
-                    android:layout_marginLeft="55dp"
-                    android:background="@drawable/icon_comentario"
-                    android:layout_marginTop="5dp"
-                    android:id="@+id/btn_comentar1"></Button>
-                <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_below="@id/contenido_publicacion1"
-                    android:layout_marginLeft="140dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/icon_like"
-                    android:id="@+id/btn_like1"></Button>
-                <Button
-                    android:layout_width="350dp"
-                    android:layout_height="210dp"
-                    android:background="@drawable/fondo_publicacion"
-                    android:layout_below="@id/btn_publicacion1"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="5dp"
-                    android:id="@+id/btn_publicacion2"></Button>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Título 2"
-                    android:textColor="@color/naranja"
-                    android:layout_below="@id/btn_publicacion1"
-                    android:textSize="25dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="18dp"
-                    android:textStyle="bold"
-                    android:id="@+id/titulo2"></TextView>
-                <TextView
-                    android:layout_width="330dp"
-                    android:layout_height="100dp"
-                    android:text="@string/publicacion"
-                    android:layout_below="@id/titulo2"
-                    android:textSize="20dp"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@color/negro"
-                    android:id="@+id/contenido_publicacion2"></TextView>
-                <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_below="@id/contenido_publicacion2"
-                    android:layout_marginLeft="55dp"
-                    android:background="@drawable/icon_comentario"
-                    android:layout_marginTop="5dp"
-                    android:id="@+id/btn_comentar2"></Button>
-                <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_below="@id/contenido_publicacion2"
-                    android:layout_marginLeft="140dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/icon_like"
-                    android:id="@+id/btn_like2"></Button>
-
-
-            </RelativeLayout>
-        </LinearLayout>
-    </ScrollView>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="match_parent"
+                android:id="@+id/pubItems"
+                android:padding="10sp" />
+    </LinearLayout>
+</RelativeLayout>

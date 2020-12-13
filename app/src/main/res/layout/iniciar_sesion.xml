@@ -34,8 +34,7 @@
                     android:textColor="@color/negro"
                     android:textStyle="bold"
                     android:layout_marginStart="30dp"
-                    android:id="@+id/correo_electronico"
-                    tools:ignore="ObsoleteLayoutParam" />
+                    android:id="@+id/correo_electronico" />
 
                 <EditText
                     android:layout_width="350dp"
@@ -59,6 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:hint="**********"
+                    android:inputType="textPassword"
                     android:id="@+id/input2" />
                 <Button
                     android:layout_width="360dp"
