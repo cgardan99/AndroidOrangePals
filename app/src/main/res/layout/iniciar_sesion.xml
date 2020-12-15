@@ -37,11 +37,13 @@
                     android:id="@+id/correo_electronico" />
 
                 <EditText
-                    android:layout_width="350dp"
+                    android:id="@+id/input1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:ems="10"
                     android:layout_marginStart="30dp"
-                    android:hint="correo@algo.com"
-                    android:id="@+id/input1" />
+                    android:layout_marginEnd="30dp"
+                    android:inputType="textEmailAddress" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -53,13 +55,16 @@
                     android:layout_marginStart="30dp"
                     android:id="@+id/contrasena" />
 
+
                 <EditText
-                    android:layout_width="350dp"
+                    android:id="@+id/input2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:ems="10"
                     android:layout_marginStart="30dp"
-                    android:hint="**********"
-                    android:inputType="textPassword"
-                    android:id="@+id/input2" />
+                    android:layout_marginEnd="30dp"
+                    android:inputType="textPassword" />
+
                 <Button
                     android:layout_width="360dp"
                     android:layout_height="50dp"

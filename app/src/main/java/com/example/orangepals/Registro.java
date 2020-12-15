@@ -2,6 +2,8 @@ package com.example.orangepals;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 
@@ -21,7 +23,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
 
         terminar_registro = (Button) findViewById(R.id.btn_terminar_registro);
         terminar_registro.setOnClickListener(this);
-
+        getSupportActionBar().hide();
     }
 
     @Override
@@ -37,4 +39,5 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
                 break;
         }
     }
+
 }

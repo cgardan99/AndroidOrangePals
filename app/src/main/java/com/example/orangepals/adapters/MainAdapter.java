@@ -43,7 +43,7 @@ public class MainAdapter extends BaseAdapter  {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Publicacion item = (Publicacion) getItem(position);
+        final Publicacion item = (Publicacion) getItem(position);
 
         convertView = LayoutInflater.from(context).inflate(R.layout.item_publicacion, null);
         TextView pubTitle = (TextView) convertView.findViewById(R.id.title);
@@ -67,6 +67,7 @@ public class MainAdapter extends BaseAdapter  {
             @Override
             public void onClick(View v) {
                 Intent IrPublicacion1 = new Intent(v.getContext(), com.example.orangepals.Publicacion.class);
+                IrPublicacion1.putExtra("id_publicacion", item.getId_publicacion());
                 context.startActivity(IrPublicacion1);
             }
         });

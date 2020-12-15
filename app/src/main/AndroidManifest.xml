@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.orangepals">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ModificarPublicacion"></activity>
+        <activity android:name=".ModificarUsuario" />
+        <activity android:name=".EditarComentario" />
+        <activity android:name=".CerrarSesion" />
+        <activity android:name=".UserBookmarks" />
+        <activity android:name=".DetalleUsuario" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,29 +27,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Iniciar_Sesion"
-            android:label="@string/app_name">
+            android:name=".EliminarUsuario"
+            android:label="@string/title_activity_eliminar_usuario">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".Iniciar_Sesion"
+            android:label="@string/app_name" />
         <activity
             android:name=".Interfaz_Usuario"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".Registro"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".Nueva_Publicacion"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name" />
         <activity
-            android:name="com.example.orangepals.Publicacion"
-            android:label="@string/app_name">
-        </activity>
-
+            android:name=".Publicacion"
+            android:label="@string/app_name" />
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

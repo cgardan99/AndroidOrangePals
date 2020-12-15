@@ -9,7 +9,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nueva Publicación"
+            android:text="Modificar Publicación"
             android:textSize="30sp"
             android:textColor="@color/naranja"
             android:layout_marginLeft="30dp"
@@ -33,13 +33,13 @@
             android:layout_below="@id/titulo"
             android:layout_centerHorizontal="true"
             android:hint="titulo de la publicación"
-            android:id="@+id/input1" />
+            android:id="@+id/edPubTitle" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Escribe algo:"
-            android:layout_below="@id/input1"
+            android:layout_below="@id/edPubTitle"
             android:textSize="27sp"
             android:textColor="@color/negro"
             android:layout_marginLeft="30dp"
@@ -53,13 +53,13 @@
             android:layout_below="@id/escribe_algo"
             android:layout_centerHorizontal="true"
             android:hint="¿Qué quieres compartir?"
-            android:id="@+id/input2" />
+            android:id="@+id/edPubText" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Selecciona tags:"
-            android:layout_below="@id/input2"
+            android:layout_below="@id/edPubText"
             android:textSize="27sp"
             android:textColor="@color/negro"
             android:layout_marginLeft="30dp"
@@ -73,31 +73,20 @@
             android:layout_below="@id/selecciona_tags"
             android:layout_centerHorizontal="true"
             android:hint="Ejemplo: #strong"
-            android:id="@+id/input3" />
+            android:id="@+id/edPubTags" />
 
         <Button
             android:layout_width="160dp"
             android:layout_height="40dp"
             android:background="@color/colorPrimaryDark"
-            android:layout_below="@id/input3"
+            android:layout_below="@id/edPubTags"
             android:text="Enviar"
             android:textSize="18sp"
             android:textColor="@color/blanco"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
-            android:id="@+id/btn_enviar" />
+            android:id="@+id/edPubTerminar" />
 
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:background="@color/colorPrimaryDark"
-            android:layout_below="@id/input3"
-            android:text="Cancelar"
-            android:textSize="18sp"
-            android:textColor="@color/blanco"
-            android:layout_marginLeft="210dp"
-            android:layout_marginTop="30dp"
-            android:id="@+id/btn_cancelar" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

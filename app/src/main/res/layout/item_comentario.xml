@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del usuario"
+            android:id="@+id/cnombre"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del usuario"
+            android:id="@+id/cfecha"
+            android:textSize="8sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ctexto"
+            android:text="Texto del comentario, descripcion"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <TableRow>
+                <Button
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:background="@drawable/icon_like" />
+                <TextView
+                    android:text="1"
+                    android:id="@+id/clikes"
+                    android:gravity="left"
+                    android:padding="3dip" />
+
+                <Button
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="80sp"
+                    android:id="@+id/cm_edit"
+                    android:visibility="invisible"
+                    android:background="@drawable/edit" />
+
+                <Button
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="40sp"
+                    android:id="@+id/cm_delete"
+                    android:visibility="invisible"
+                    android:background="@drawable/delete" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

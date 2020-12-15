@@ -8,44 +8,31 @@
         android:orientation="vertical"
         android:padding="20sp">
 
-        <Button
-            android:layout_width="260dp"
-            android:layout_height="60dp"
-            android:background="@drawable/fondo_transparente"
-            android:text="Regresar a login"
-            android:textSize="23sp"
-            android:textColor="@color/naranja"
-            android:id="@+id/regresar" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regístrate en Orange Pals"
+            android:text="Modifica tu usuario"
             android:textSize="30sp"
             android:textColor="@color/naranja"
             android:textStyle="bold"
-            android:layout_below="@+id/regresar"
             android:id="@+id/Titulo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nickname: "
-            android:layout_below="@id/Titulo"
             android:textSize="25sp"
             android:textColor="@color/negro"
             android:textStyle="bold"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:id="@+id/nickname" />
 
         <EditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/nickname"
-            android:layout_centerHorizontal="true"
             android:hint="nombre de pila que tendrás"
-            android:id="@+id/input1" />
+            android:id="@+id/edUsername" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,17 +42,15 @@
             android:textSize="25sp"
             android:textColor="@color/negro"
             android:textStyle="bold"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:id="@+id/correo_electronico" />
 
         <EditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/correo_electronico"
-            android:layout_centerHorizontal="true"
             android:hint="correo@algo.com"
-            android:id="@+id/input2" />
+            android:id="@+id/edEmail" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -82,61 +67,17 @@
         <EditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/pais"
-            android:layout_centerHorizontal="true"
             android:hint="Mexico, USA, etc"
-            android:id="@+id/input3" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contraseña: "
-            android:layout_below="@id/input3"
-            android:textSize="25sp"
-            android:textColor="@color/negro"
-            android:textStyle="bold"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:id="@+id/contrasena" />
-
-        <EditText
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/contrasena"
-            android:layout_centerHorizontal="true"
-            android:hint="**********"
-            android:id="@+id/input4" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Confirmar contraseña: "
-            android:layout_below="@id/input4"
-            android:textSize="25sp"
-            android:textColor="@color/negro"
-            android:textStyle="bold"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:id="@+id/confirmar_contrasena" />
-
-        <EditText
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/confirmar_contrasena"
-            android:layout_centerHorizontal="true"
-            android:hint="**********"
-            android:id="@+id/input5" />
+            android:id="@+id/edPais" />
 
         <Button
             android:layout_width="360dp"
             android:layout_height="40dp"
             android:background="@color/colorPrimaryDark"
-            android:layout_below="@id/input5"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="Terminar Registro"
+            android:text="Terminar"
             android:textColor="@color/blanco"
             android:textSize="18sp"
-            android:id="@+id/btn_terminar_registro" />
+            android:id="@+id/edTerminar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
