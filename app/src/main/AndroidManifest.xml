@@ -13,21 +13,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ModificarPublicacion"></activity>
-        <activity android:name=".ModificarUsuario" />
-        <activity android:name=".EditarComentario" />
+        <activity
+            android:name=".ModificarPublicacion"
+            android:noHistory="true"/>
+        <activity android:name=".ModificarUsuario"
+            android:noHistory="true"/>
+        <activity
+            android:name=".EditarComentario"
+            android:noHistory="true"/>
         <activity android:name=".CerrarSesion" />
         <activity android:name=".UserBookmarks" />
-        <activity android:name=".DetalleUsuario" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".DetalleUsuario"
+            android:noHistory="true"/>
+        <activity android:name=".MainActivity" android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".EliminarUsuario"
+            android:noHistory="true"
             android:label="@string/title_activity_eliminar_usuario">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +55,7 @@
             android:label="@string/app_name" />
         <activity
             android:name=".Publicacion"
+            android:noHistory="true"
             android:label="@string/app_name" />
     </application>
 

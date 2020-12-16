@@ -45,12 +45,6 @@
                     android:id="@+id/comments"
                     android:gravity="left"
                     android:padding="3dip" />
-                <Button
-                    android:layout_marginLeft="30sp"
-                    android:layout_width="20sp"
-                    android:layout_height="20sp"
-                    android:id="@+id/saved"
-                    android:background="@drawable/bookmark" />
             </TableRow>
         </TableLayout>
     </LinearLayout>

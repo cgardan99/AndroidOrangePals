@@ -24,14 +24,12 @@
             android:textSize="30sp"
             android:textColor="@color/naranja"
             android:textStyle="bold"
-            android:layout_below="@+id/regresar"
             android:id="@+id/Titulo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nickname: "
-            android:layout_below="@id/Titulo"
             android:textSize="25sp"
             android:textColor="@color/negro"
             android:textStyle="bold"
@@ -42,16 +40,13 @@
         <EditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/nickname"
-            android:layout_centerHorizontal="true"
             android:hint="nombre de pila que tendrás"
-            android:id="@+id/input1" />
+            android:id="@+id/usUsername" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Correo electrónico: "
-            android:layout_below="@id/input1"
             android:textSize="25sp"
             android:textColor="@color/negro"
             android:textStyle="bold"
@@ -62,16 +57,13 @@
         <EditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/correo_electronico"
-            android:layout_centerHorizontal="true"
             android:hint="correo@algo.com"
-            android:id="@+id/input2" />
+            android:id="@+id/usEmail" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="País: "
-            android:layout_below="@id/input2"
             android:textSize="25sp"
             android:textColor="@color/negro"
             android:textStyle="bold"
@@ -79,19 +71,15 @@
             android:layout_marginTop="10dp"
             android:id="@+id/pais" />
 
-        <EditText
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pais"
-            android:layout_centerHorizontal="true"
-            android:hint="Mexico, USA, etc"
-            android:id="@+id/input3" />
+        <Spinner
+            android:id="@+id/selectPais"
+            android:layout_width="match_parent"
+            android:layout_height="25sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contraseña: "
-            android:layout_below="@id/input3"
             android:textSize="25sp"
             android:textColor="@color/negro"
             android:textStyle="bold"
@@ -102,16 +90,14 @@
         <EditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/contrasena"
-            android:layout_centerHorizontal="true"
             android:hint="**********"
-            android:id="@+id/input4" />
+            android:inputType="textPassword"
+            android:id="@+id/usPwd1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Confirmar contraseña: "
-            android:layout_below="@id/input4"
             android:textSize="25sp"
             android:textColor="@color/negro"
             android:textStyle="bold"
@@ -122,17 +108,14 @@
         <EditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/confirmar_contrasena"
-            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
             android:hint="**********"
-            android:id="@+id/input5" />
+            android:id="@+id/usPwd2" />
 
         <Button
             android:layout_width="360dp"
             android:layout_height="40dp"
             android:background="@color/colorPrimaryDark"
-            android:layout_below="@id/input5"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Terminar Registro"
             android:textColor="@color/blanco"

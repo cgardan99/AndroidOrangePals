@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -59,7 +59,8 @@
                 <Button
                     android:layout_width="20sp"
                     android:layout_height="20sp"
-                    android:background="@drawable/icon_like" />
+                    android:background="@drawable/icon_like"
+                    android:id="@+id/icon_like"/>
                 <TextView
                     android:text="1"
                     android:id="@+id/pub_likes"
@@ -69,7 +70,8 @@
                     android:layout_marginLeft="30sp"
                     android:layout_width="20sp"
                     android:layout_height="20sp"
-                    android:background="@drawable/icon_comentario" />
+                    android:background="@drawable/icon_comentario"
+                    android:id="@+id/icon_comentario" />
                 <TextView
                     android:text="12"
                     android:id="@+id/pub_comments"
@@ -86,6 +88,7 @@
                     android:layout_marginLeft="30sp"
                     android:layout_width="20sp"
                     android:layout_height="20sp"
+                    android:visibility="invisible"
                     android:id="@+id/editar_publicacion"
                     android:background="@drawable/edit" />
 
@@ -143,9 +146,9 @@
             android:textStyle="bold" />
 
         <ListView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="250sp"
             android:id="@+id/comItems"
             android:padding="10sp" />
     </LinearLayout>
-</RelativeLayout>
+</ScrollView>

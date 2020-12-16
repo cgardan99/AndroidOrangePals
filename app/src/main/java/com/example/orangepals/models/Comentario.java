@@ -11,8 +11,9 @@ public class Comentario {
     private Integer likes;
     private boolean es_mio;
     private boolean like_mio;
+    private Integer pid;
 
-    public Comentario(Integer comentario_id, Integer usuario_id, String username, String texto, String fecha, Integer likes, boolean es_mio, boolean like_mio) {
+    public Comentario(Integer comentario_id, Integer usuario_id, String username, String texto, String fecha, Integer likes, boolean es_mio, boolean like_mio, Integer pid) {
         this.comentario_id = comentario_id;
         this.usuario_id = usuario_id;
         this.username = username;
@@ -21,6 +22,15 @@ public class Comentario {
         this.likes = likes;
         this.es_mio = es_mio;
         this.like_mio = like_mio;
+        this.pid = pid;
+    }
+
+    public Integer getPid() {
+        return pid;
+    }
+
+    public void setPid(Integer pid) {
+        this.pid = pid;
     }
 
     public boolean isEs_mio() {

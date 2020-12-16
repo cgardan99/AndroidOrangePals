@@ -25,7 +25,7 @@
             android:text="Editar Comentario" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editCmText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -33,7 +33,7 @@
              />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnCmEditEnd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TERMINAR"

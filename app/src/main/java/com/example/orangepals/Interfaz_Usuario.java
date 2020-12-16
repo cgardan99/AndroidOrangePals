@@ -126,9 +126,7 @@ public class Interfaz_Usuario extends AppCompatActivity implements View.OnClickL
             new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    if(error.networkResponse.statusCode == 403) {
-                        Toast.makeText(Interfaz_Usuario.this, "Ocurrió un error obteniendo las publicaciones.", Toast.LENGTH_LONG).show();
-                    }
+                    Toast.makeText(Interfaz_Usuario.this, "Error en el servidor.", Toast.LENGTH_LONG).show();
                 }
             });
         RequestQueue rq = Volley.newRequestQueue(Interfaz_Usuario.this);

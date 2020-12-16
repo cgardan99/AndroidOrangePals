@@ -31,7 +31,7 @@
             android:text="Username"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="48dp"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textColor="@color/negro"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"/>
@@ -43,6 +43,7 @@
             android:text="País de procedencia"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="79dp"
+            android:textSize="15sp"
             android:textColor="@color/negro"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp" />
@@ -55,8 +56,9 @@
             tools:layout_editor_absoluteX="174dp"
             tools:layout_editor_absoluteY="227dp"
             android:textColor="@color/negro"
+            android:textSize="20sp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="30dp" />
 
         <TableLayout
             android:layout_width="match_parent"
@@ -73,14 +75,7 @@
                     android:text="Editar"
                     android:textColor="@color/blanco"
                     android:id="@+id/editarUsuario"/>
-                <Button
-                    android:layout_height="40sp"
-                    android:padding="10sp"
-                    android:layout_marginStart="10sp"
-                    android:background="#E10000"
-                    android:text="Eliminar Usuario"
-                    android:textColor="@color/blanco"
-                    android:id="@+id/eliminarUsuario"/>
+
             </TableRow>
         </TableLayout>
 

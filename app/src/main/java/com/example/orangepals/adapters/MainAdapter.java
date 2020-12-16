@@ -50,18 +50,14 @@ public class MainAdapter extends BaseAdapter  {
         TextView pubContent = (TextView) convertView.findViewById(R.id.content);
         TextView pubLikes = (TextView) convertView.findViewById(R.id.likes);
         TextView pubComents = (TextView) convertView.findViewById(R.id.comments);
-        Button pubSaved = (Button) convertView.findViewById(R.id.saved);
+
 
         pubTitle.setText(item.getTitulo());
         pubContent.setText(item.getDescripcion());
         pubLikes.setText(item.getCorazones().toString());
         pubComents.setText(item.getComentarios().toString());
 
-        if(item.getSaved()) {
-            pubSaved.setBackgroundResource(R.drawable.bookmark_s);
-        } else {
-            pubSaved.setBackgroundResource(R.drawable.bookmark);
-        }
+
 
         pubTitle.setOnClickListener(new View.OnClickListener() {
             @Override

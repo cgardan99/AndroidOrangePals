@@ -64,11 +64,10 @@
             android:layout_marginTop="10dp"
             android:id="@+id/pais" />
 
-        <EditText
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:hint="Mexico, USA, etc"
-            android:id="@+id/edPais" />
+        <Spinner
+            android:id="@+id/selectPais"
+            android:layout_width="match_parent"
+            android:layout_height="25sp" />
 
         <Button
             android:layout_width="360dp"
