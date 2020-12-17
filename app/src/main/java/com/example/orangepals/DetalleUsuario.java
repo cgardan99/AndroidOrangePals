@@ -2,6 +2,7 @@ package com.example.orangepals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -38,7 +39,7 @@ public class DetalleUsuario extends AppCompatActivity implements View.OnClickLis
     private String usrid;
     private RequestsHelp rh = new RequestsHelp();
     private ListView pubItems;
-    private Button editarUsuario;
+    private Button editarUsuario, eliminarUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,8 @@ public class DetalleUsuario extends AppCompatActivity implements View.OnClickLis
         us_email = (TextView) findViewById(R.id.us_email);
         editarUsuario = (Button) findViewById(R.id.editarUsuario);
         editarUsuario.setOnClickListener(this);
+        eliminarUsuario = (Button) findViewById(R.id.eliminarUsuario);
+        eliminarUsuario.setOnClickListener(this);
 
         pubItems = (ListView) findViewById(R.id.us_publicaciones);
         final ArrayList<Publicacion> listItems = new ArrayList<>();
@@ -145,12 +148,17 @@ public class DetalleUsuario extends AppCompatActivity implements View.OnClickLis
         rq.add(sr);
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.editarUsuario:
                 Intent mUser = new Intent(DetalleUsuario.this, ModificarUsuario.class);
                 startActivity(mUser);
+                break;
+            case R.id.eliminarUsuario:
+                Intent eUser = new Intent(DetalleUsuario.this, EliminarUsuario.class);
+                startActivity(eUser);
                 break;
         }
     }

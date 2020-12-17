@@ -75,6 +75,14 @@
                     android:text="Editar"
                     android:textColor="@color/blanco"
                     android:id="@+id/editarUsuario"/>
+                <Button
+                    android:layout_height="40sp"
+                    android:padding="10sp"
+                    android:layout_marginStart="10sp"
+                    android:background="#F44336"
+                    android:text="Eliminar Usuario"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/eliminarUsuario"/>
 
             </TableRow>
         </TableLayout>
